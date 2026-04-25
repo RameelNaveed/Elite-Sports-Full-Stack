@@ -1,0 +1,30 @@
+/* LoginStyles.css */
+
+.fade-in {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button slight transparency and glow on hover */
+  .glow-button {
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px #0d6efd, 0 0 20px #0d6efd;
+  }
+  
