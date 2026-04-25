@@ -42,11 +42,11 @@ Follow these steps to get the project running locally.
 
 ### 2. Database Setup
 1. Open your SQL Server tool (SSMS or VS Code SQL Extension).
-2. Run the provided script: `Project_FInal_DB.sql`.
+2. Run the provided script: `Backend/Project_FInal_DB.sql`.
 3. This will create the `MyProjectDB` and all necessary tables/stored procedures.
 
 ### 3. Backend Configuration
-1. Navigate to the `node-server` folder.
+1. Navigate to the `Backend` folder.
 2. Create a `.env` file and add your credentials:
    ```env
    DB_SERVER=localhost
@@ -64,7 +64,7 @@ Follow these steps to get the project running locally.
    ```
 
 ### 4. Frontend Setup
-1. Navigate to the `gym-crud-ui` folder.
+1. Navigate to the `Frontend` folder.
 2. Install dependencies:
    ```bash
    npm install
@@ -79,13 +79,14 @@ Follow these steps to get the project running locally.
 ## 📂 Project Structure
 
 ```text
-├── gym-crud-ui/         # React Frontend
+├── Frontend/            # React Frontend
 │   ├── public/          # Static assets
 │   └── src/             # React components and logic
-├── node-server/         # Express Backend
+├── Backend/             # Express Backend
 │   ├── routes/          # API Endpoints
 │   ├── controllers/     # Business logic
+│   ├── Project_FInal_DB.sql # Database schema and seed data
 │   └── server.js        # Entry point
-└── Project_FInal_DB.sql # Database schema and seed data
+└── README.md            # Project documentation
 ```
 
